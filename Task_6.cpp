@@ -3,18 +3,24 @@
 
 int main(){
 
-    double D = 0,A = 0,x = 0,b=0,S=0;
+    double D = 0,x= 0, A = 0, B=0, Y=0, K = 0, p = 0, C = 0;
+    double const e = 2.7; 
 
+    std::cout << " p - ";
+    std::cin >>  p;
     std::cout << " X - ";
     std::cin >> x;
-    std::cout << " D - ";
+    std::cout << " K";
+    std::cin >> K;
+    std::cout << " D";
     std::cin >> D;
+    std::cout << " C ";
+    std::cin >> C;
 
-    b = x+D;
-    A = D*x/b;
+    A = x + sin(p);
+    B = pow(e,K);
+    Y = 1 + ( pow(K,2) / (2 * A* B) ) - B + D*C;
 
-    S = (pow(A,2) + b * cos(x))/ pow(D,3) + (A+D-b);
-
-    std::cout << "Result S = " << S;
+    std::cout << "Result Y = " << Y;
     return 0;
 }
