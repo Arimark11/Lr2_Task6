@@ -3,8 +3,7 @@
 
 int main(){
 
-    double D = 0,x= 0, A = 0, B=0, Y=0, K = 0, p = 0, C = 0;
-    double const e = 2.7; 
+    double D = 0,x= 0, B=0, q=0, K = 0, p = 0, C = 0, n = 0;
 
     std::cout << " p - ";
     std::cin >>  p;
@@ -14,13 +13,15 @@ int main(){
     std::cin >> K;
     std::cout << " D";
     std::cin >> D;
-    std::cout << " C ";
-    std::cin >> C;
+    std::cout << " B ";
+    std::cin >> B;
+    std::cout << " N: ";
+    std::cin >> n ;
 
-    A = x + sin(p);
-    B = pow(e,K);
-    Y = 1 + ( pow(K,2) / (2 * A* B) ) - B + D*C;
+    C = p-n;
+    B = cos(x);
+    q = B*B / (K*D) + B * C *C *C;
 
-    std::cout << "Result Y = " << Y;
+    std::cout << "Result Q = " << q;
     return 0;
 }
