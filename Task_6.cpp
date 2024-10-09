@@ -3,27 +3,23 @@
 
 int main(){
 
-    double D = 0,x= 0, A=0, K = 0, Z = 0, p = 0, C = 0, B = 0,z = 0;
+    double D = 0,x= 0, A=0, K = 0, Z = 0, k = 0, C = 0, B = 0,z = 0;
 
     
     std::cout << " X - ";
     std::cin >> x;
-    std::cout << " Z: ";
-    std::cin >> Z;
     std::cout << " C ";
     std::cin >> C;
-    std::cout << " K : ";
-    std::cin >> K;
-    std::cout << " p: ";
-    std::cin >> p;
+    std::cout << " k: ";
+    std::cin >> k;
     std::cout << " z: ";
     std::cin >> z;
     std::cout << " D: ";
     std::cin >> D;
 
-    A = sin(x) - z ;
-    B = fabs(p-x);
-    double Y  = pow((A+B),2) - ( K/C*D); 
+    A = log(x) - k ;
+    B = sqrt(z);
+    double Y  = pow(D,2) + (pow(C,2) / (0.75 *A)) + B; 
 
     std::cout << "Result Y = " << Y;
     return 0;
