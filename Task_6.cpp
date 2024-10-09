@@ -3,25 +3,25 @@
 
 int main(){
 
-    double D = 0,x= 0, B=0, A=0, K = 0, Y = 0, C = 0, Z = 0;
+    double D = 0,x= 0, B=0, A=0, K = 0, m = 0, C = 0, n = 0;
 
     std::cout << " A - ";
     std::cin >>  A;
     std::cout << " X - ";
     std::cin >> x;
-    std::cout << " Y";
-    std::cin >> Y;
+    std::cout << " K";
+    std::cin >> K;
     std::cout << " D";
     std::cin >> D;
-    std::cout << " C ";
-    std::cin >> C;
-    std::cout << " Z: ";
-    std::cin >> Z ;
+    std::cout << " n ";
+    std::cin >> n;
+    std::cout << " m : ";
+    std::cin >> m ;
 
-    A = x-Y;
-    B = sqrt(Z);
-    double T  = cos(x) + (A*A /(K-C*D)) - B;
+    A = fabs(n+m);
+    D = tan(x);
+    double Y = 1.29 + (K/A) + pow(D,2);
 
-    std::cout << "Result T = " << T;
+    std::cout << "Result Y = " << Y;
     return 0;
 }
