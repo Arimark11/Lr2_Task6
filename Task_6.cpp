@@ -3,25 +3,21 @@
 
 int main(){
 
-    double D = 0,x= 0, A=0, K = 0, h = 0, p = 0, C = 0, B = 0;
+    double D = 0,x= 0, A=0, K = 0, e = 2.7, d = 0, C = 0, B = 0;
 
     
     std::cout << " X - ";
     std::cin >> x;
-    std::cout << " D: ";
-    std::cin >> D;
+    std::cout << " d: ";
+    std::cin >> d;
     std::cout << " C ";
     std::cin >> C;
     std::cout << " K : ";
     std::cin >> K;
-    std::cout << " h: ";
-    std::cin >> h;
-    std::cout << " P: ";
-    std::cin >> p;
-    
-    A = x - p;
-    B = log(h);
-    double Y  = 0.78*B + (pow(A,3) / K*C*D); 
+
+    A = log10(x);
+    B = x + pow(e,d);
+    double Y  = (A+B) - ( pow(C,2) / K); 
 
     std::cout << "Result Y = " << Y;
     return 0;
