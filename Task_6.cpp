@@ -3,25 +3,21 @@
 
 int main(){
 
-    double D = 0,x= 0, B=0, A=0, K = 0, Y = 0, C = 0, Z = 0;
+    double D = 0,x= 0, A=0, K = 0, y = 0, C = 0;
 
-    std::cout << " A - ";
-    std::cin >>  A;
     std::cout << " X - ";
     std::cin >> x;
     std::cout << " Y";
-    std::cin >> Y;
-    std::cout << " D";
-    std::cin >> D;
+    std::cin >> y;
     std::cout << " C ";
     std::cin >> C;
-    std::cout << " Z: ";
-    std::cin >> Z ;
+    std::cout << " K : ";
+    std::cin >> K;
 
-    A = x-Y;
-    B = sqrt(Z);
-    double T  = cos(x) + (A*A /(K-C*D)) - B;
+    A = x+y;
+    D = fabs(C-A);
+    double S  = 10.1 + (A/C) + (D / pow(K,2)); 
 
-    std::cout << "Result T = " << T;
+    std::cout << "Result T = " << S;
     return 0;
 }
